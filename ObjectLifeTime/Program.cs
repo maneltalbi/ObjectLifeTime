@@ -5,17 +5,19 @@
         static void Main(string[] args)
         {
             Car myCar = new Car();
+            Car.MyMethod();
             /*
             myCar.Make = "oldmobile";
             myCar.Model = "cutlas Supreme";
             myCar.Year = 1986;
             myCar.Color = "silver";
-            */
+           
 
            //Car myThirdCar = new Car("Ford", "Escape",2005 , "White");
 
             Car myOtherCar;
             myOtherCar = myCar;
+
             Console.WriteLine("{0} {1} {2} {3}",
                 myOtherCar.Make,
                 myOtherCar.Model,
@@ -34,10 +36,11 @@
                 myOtherCar.Model,
                 myOtherCar.Year,
                 myOtherCar.Color);
-            */
+          
             myCar = null;
+            */
             Console.ReadLine();
-
+           
         }
        
     }
@@ -62,5 +65,11 @@
             Color = color;
         }
        */ 
+    public static void MyMethod()
+        {
+            Console.WriteLine("called the static MyMethod");
+            Console.WriteLine(Make);
+        
+        }
     }
 }
